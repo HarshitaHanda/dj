@@ -1094,6 +1094,37 @@ p {
         font-size: 1.8rem;
     }
 
+    .nav-wrapper {
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        order: 2;
+        width: auto;
+        flex: 1;
+        justify-content: space-between;
+        gap: 6px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links a {
+        font-size: 0.72rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
     .hero-ctas {
         gap: var(--spacing-sm);
     }
@@ -1101,12 +1132,6 @@ p {
     .hero-meta {
         font-size: 0.75rem;
         gap: var(--spacing-sm);
-    }
-
-    .nav-links {
-        order: 2;
-        width: 100%;
-        font-size: 0.75rem;
     }
 
     .nav-brand {
